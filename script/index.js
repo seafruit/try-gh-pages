@@ -81,3 +81,16 @@ function setCookie() {
   }
 }
 setCookie();
+
+function bling() {
+  var imgs = document.getElementsByClassName('heavenly-body__light');
+  for (var i = 0; i < imgs.length; i += 1) {
+    if (imgs[i].style.visibility === 'visible') {
+      imgs[i].style.visibility = 'hidden';
+    } else {
+      imgs[i].style.visibility = 'visible';
+    }
+  }
+  setTimeout('bling()', 300);
+}
+bling();

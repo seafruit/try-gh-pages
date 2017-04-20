@@ -18,7 +18,7 @@ button a {
 }
 
 .banner {
-    background-color: gray;
+    background-color: rgba(193, 193, 193, .1);
     width: 100%;
     z-index: 6;
     top: 0%;
@@ -59,7 +59,7 @@ button a {
     width: 50%;
     top: 0%;
     right: 0%;
-    height: 100%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,6 +109,7 @@ button a {
 .begin__pear {
     width: 15%;
 }
+
 .begin__pair-programming {
     width: 50%;
 }
@@ -120,6 +121,7 @@ button a {
 .begin__sign-up__ground {
     width: 100%;
 }
+
 .begin__sign-up {
     position: relative;
     width: 90%;
@@ -180,14 +182,6 @@ button a {
     width: 4%;
     right: 19%;
 }
-
-
-
-
-
-
-
-
 
 .video {
     display: flex;
@@ -287,6 +281,7 @@ button a {
     justify-content: center;
     align-items: center;
 }
+
 .level1__header img, .level2__header img, .level3__header img {
     width: 50%;
     padding-bottom: 1rem;
@@ -301,8 +296,6 @@ button a {
     height: 100%;
     width: 100%;
 }
-
-
 
 .level1__body {
     position: relative;
@@ -364,9 +357,6 @@ button a {
     text-align: center;
     font-size: 0.5rem;
 }
-
-
-
 
 .level2__body {
     position: relative;
@@ -599,7 +589,7 @@ button a {
 }
 
 .activity-detail-content {
-    padding:1rem;
+    padding: 1rem;
 }
 
 .activity-detail__target, .activity-detail__process {
@@ -652,9 +642,6 @@ button a {
 .awards__header {
     text-align: center;
 }
-
-
-
 
 .coaches__photos, .books__covers {
     width: 90%;
@@ -740,7 +727,6 @@ button a {
 .foot__copy-right {
 
 }
-
 
 .last-part-do-not-parallax {
     width: 100%;
