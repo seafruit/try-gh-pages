@@ -256,6 +256,7 @@ button a {
     width: 35%;
     left: 34%;
 }
+
 .video__body__watch-video-cn {
     position: relative;
     display: flex;
@@ -690,10 +691,12 @@ button a {
 .about-us__tw__title {
     display: flex;
     flex-direction: row;
+    padding-bottom: .5rem;
 }
 
 .about-us__tw__detail {
     font-size: 0.5rem;
+    padding-bottom: .5rem;
 }
 
 .about-us__code {
@@ -710,6 +713,10 @@ button a {
 
 .about-us__QR-Code {
     width: 50%;
+}
+
+.background-bottom {
+    margin-top: -20%;
 }
 
 .foot {

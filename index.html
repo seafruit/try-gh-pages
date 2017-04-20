@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="style/index.css"/>
     <link rel="stylesheet" media="screen and (max-width:800px)" href="style/mobile.css" type="text/css"/>
     <link rel="stylesheet" media="screen and (min-width:800px)" href="style/PC.css" type="text/css"/>
@@ -117,7 +117,12 @@
                 <div class="video__body__background">
                     <div class="video__body__watch-video-cn" onClick="videoPlayPause()">
                         <video id="video-programming-tour" poster="img/">
-                            <source src="video/thoughtWorks-programming-tour.mp4"></source>
+                            <source src="video/thoughtWorks-programming-tour.mp4">
+                            </source>
+                        </video>
+                        <video id="video-programming-tour" poster="img/" preload="none">
+                            <source src="video/thoughtWorks-programming-tour.mp4">
+                            </source>
                         </video>
                         <img src="img/watch-video-cn.png" alt="">
                     </div>
@@ -345,14 +350,22 @@
                 <img src="img/left-hand.png" alt="" class="level3__left-hand">
                 <img src="img/right-hand.png" alt="" class="level3__right-hand">
             </div>
-            <img src="img/stars/red1.png" alt="" class="star__red1" data-5200="top:200%" data-5800="top:88%"  data-6100="top:88%" data-6500="top:-100%">
-            <img src="img/stars/red2.png" alt="" class="star__red2" data-5200="top:200%" data-5800="top:0%" data-6100="top:0%" data-6500="top:-100%">
-            <img src="img/stars/red3.png" alt="" class="star__red3" data-5200="top:200%" data-5800="top:30%" data-6100="top:30%" data-6500="top:-100%">
-            <img src="img/stars/yellow1.png" alt="" class="star__yellow1" data-5200="top:200%" data-5800="top:56%" data-6100="top:56%" data-6500="top:-100%">
-            <img src="img/stars/yellow2.png" alt="" class="star__yellow2" data-5200="top:200%" data-5800="top:9%" data-6100="top:9%" data-6500="top:-100%">
-            <img src="img/stars/orange1.png" alt="" class="star__orange1" data-5200="top:200%" data-5800="top:63%" data-6100="top:63%" data-6500="top:-100%">
-            <img src="img/stars/orange2.png" alt="" class="star__orange2" data-5200="top:200%" data-5800="top:9%" data-6100="top:9%" data-6500="top:-100%">
-            <img src="img/stars/orange3.png" alt="" class="star__orange3" data-5200="top:200%" data-5800="top:31%" data-6100="top:31%" data-6500="top:-100%">
+            <img src="img/stars/red1.png" alt="" class="star__red1" data-5200="top:200%" data-5800="top:88%"
+                 data-6100="top:88%" data-6500="top:-100%">
+            <img src="img/stars/red2.png" alt="" class="star__red2" data-5200="top:200%" data-5800="top:0%"
+                 data-6100="top:0%" data-6500="top:-100%">
+            <img src="img/stars/red3.png" alt="" class="star__red3" data-5200="top:200%" data-5800="top:30%"
+                 data-6100="top:30%" data-6500="top:-100%">
+            <img src="img/stars/yellow1.png" alt="" class="star__yellow1" data-5200="top:200%" data-5800="top:56%"
+                 data-6100="top:56%" data-6500="top:-100%">
+            <img src="img/stars/yellow2.png" alt="" class="star__yellow2" data-5200="top:200%" data-5800="top:9%"
+                 data-6100="top:9%" data-6500="top:-100%">
+            <img src="img/stars/orange1.png" alt="" class="star__orange1" data-5200="top:200%" data-5800="top:63%"
+                 data-6100="top:63%" data-6500="top:-100%">
+            <img src="img/stars/orange2.png" alt="" class="star__orange2" data-5200="top:200%" data-5800="top:9%"
+                 data-6100="top:9%" data-6500="top:-100%">
+            <img src="img/stars/orange3.png" alt="" class="star__orange3" data-5200="top:200%" data-5800="top:31%"
+                 data-6100="top:31%" data-6500="top:-100%">
         </div>
         <div class="level3__time">
             <span class="level2__number">6</span>
@@ -376,7 +389,7 @@
     <div class="activity-and-award"
          data-6200="top:100%;"
          data-6400="top:0%;"
-         data-6800="display:flex; justify-content: center;height:100%"
+         data-6800="display:flex; justify-content: center; height:100%"
          data-7400="top:-100%; display: none">
         <div class="activity">
             <div class="activity-detail">
