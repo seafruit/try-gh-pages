@@ -66,8 +66,8 @@ html {
 }
 
 .last-part-do-not-parallax {
-    /*position: absolute;*/
-    /*top: 7800px;*/
+    position: absolute;
+    top: 7800px;
 }
 
 .about-us__tw {

@@ -28,8 +28,8 @@ html {
 }
 
 .last-part-do-not-parallax {
-    /*position: absolute;*/
-    /*top: 7900px;*/
+    position: absolute;
+    top: 7900px;
 }
 
 .about-us__tw__title {
