@@ -94,11 +94,3 @@ function bling() {
   setTimeout('bling()', 300);
 }
 bling();
-//
-// function showLoading(){
-//   document.getElementById("over").style.display = "none";
-//   document.getElementById('layout').style.display = 'none';
-//   document.getElementById('main').style.display = 'block';
-// }
-//
-// setTimeout('showLoading()',5000);

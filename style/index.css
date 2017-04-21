@@ -748,31 +748,3 @@ button a {
     flex-direction: row;
     justify-content: space-between;
 }
-
-/*---------------------------------loading------------------------------------*/
-#over {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #c1c1c1;
-    opacity:0.5;
-    z-index: 1000;
-}
-
-#layout {
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    width: 20%;
-    height: 20%;
-    z-index: 1001;
-    text-align:center;
-}
-
-#main{
-    display:block;
-}
