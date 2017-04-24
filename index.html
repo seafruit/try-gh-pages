@@ -12,26 +12,26 @@
     <script src="script/siema.min.js"></script>
     <title>ThoughtWorks Pair Programming</title>
     <script type="text/javascript">
-
         var start_time = new Date();
-        var end_time = "" ;
-        var t = setInterval(function(){
-            if(document.readyState=="complete"){aa();}
-        },500);
+        var end_time = "";
 
-        function aa(){
-            end_time = new Date();
-            alert(end_time.getTime() -  start_time.getTime() );
-            clearInterval(t);
-        }
-
-        function showLoading() {
+        function displayLoading() {
             document.getElementById("over").style.display = "none";
             document.getElementById('layout').style.display = 'none';
             document.getElementById('main').style.opacity = '1';
         }
 
-        setTimeout('showLoading()', 2000);
+        var t = setInterval(function () {
+            if (document.readyState == "complete") {
+                aa();
+                displayLoading();
+            }
+        }, 500);
+
+        function aa() {
+            end_time = new Date();
+            clearInterval(t);
+        }
     </script>
 </head>
 <body>
@@ -806,5 +806,7 @@
             siemaBook.next(4);
         }
     }
+
+
 </script>
 </html>
