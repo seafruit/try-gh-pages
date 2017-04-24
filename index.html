@@ -12,9 +12,6 @@
     <script src="script/siema.min.js"></script>
     <title>ThoughtWorks Pair Programming</title>
     <script type="text/javascript">
-        var start_time = new Date();
-        var end_time = "";
-
         function displayLoading() {
             document.getElementById("over").style.display = "none";
             document.getElementById('layout').style.display = 'none';
@@ -23,15 +20,10 @@
 
         var t = setInterval(function () {
             if (document.readyState == "complete") {
-                aa();
+                clearInterval(t);
                 displayLoading();
             }
         }, 500);
-
-        function aa() {
-            end_time = new Date();
-            clearInterval(t);
-        }
     </script>
 </head>
 <body>
