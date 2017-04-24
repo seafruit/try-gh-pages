@@ -6,7 +6,7 @@
   http://elrumordelaluz.github.io/csshake/
   Licensed under MIT
 \* * * * * * * * * * * * * * * * * * * * */
-.shake, .shake-little, .shake-slow, .shake-hard, .shake-horizontal, .shake-vertical, .shake-rotate, .shake-opacity, .shake-crazy, .shake-chunk {
+.shake, .shake-slow, .shake-slow1, .shake-slow2, .shake-slow3, .shake-slow4 {
     display: inline-block;
     transform-origin: center center
 }
@@ -350,7 +350,36 @@
 
 .shake-slow:hover, .shake-trigger:hover .shake-slow, .shake-slow.shake-freeze, .shake-slow.shake-constant {
     animation-name: shake-slow;
-    animation-duration: 5s;
+    animation-duration: 3.9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite
+}
+
+.shake-slow1:hover, .shake-trigger:hover .shake-slow1, .shake-slow1.shake-freeze, .shake-slow1.shake-constant {
+    animation-name: shake-slow;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite
+}
+
+.shake-slow2:hover, .shake-trigger:hover .shake-slow2, .shake-slow2.shake-freeze, .shake-slow2.shake-constant {
+    animation-name: shake-slow;
+    animation-duration: 4s;
+    animation-delay: 0.1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite
+}
+
+.shake-slow3:hover, .shake-trigger:hover .shake-slow3, .shake-slow3.shake-freeze, .shake-slow3.shake-constant {
+    animation-name: shake-slow;
+    animation-duration: 4s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite
+}
+.shake-slow4:hover, .shake-trigger:hover .shake-slow4, .shake-slow4.shake-freeze, .shake-slow4.shake-constant {
+    animation-name: shake-slow;
+    animation-duration: 4.1s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite
 }

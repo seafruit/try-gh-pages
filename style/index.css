@@ -4,10 +4,6 @@ body {
     font-family: sans-serif;
 }
 
-img {
-    max-width: 100%;
-}
-
 a {
     text-decoration: none;
     color: gray;
@@ -15,6 +11,31 @@ a {
 
 button a {
     color: #1c1c1c;
+    display: inline-block;
+    width:100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.relative_the_section {
+    position: relative;
+}
+
+.full_width {
+    width: 100%;
+}
+
+.level1__body__height, .level2__body__height, .level3__body__height {
+    height: 50%;
+}
+
+.column_width_height_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
 
 .banner {
@@ -30,14 +51,9 @@ button a {
 
 .banner__logo {
     position: relative;
-    /*height: 6%;*/
     width: 30%;
-    /* flex: 1 0 30%; */
-    /* flex-direction: column; */
     display: flex;
     align-items: center;
-    /*width: 88%;*/
-    /*align-items: flex-start;*/
 }
 
 .banner__button {
@@ -50,12 +66,7 @@ button a {
     border: none;
     border-radius: 0.2rem;
     background: #f8e952;
-    /*width: 18%;*/
-    /*max-width: 28rem;*/
     font-size: 0.5rem;
-    /* padding: 0.4rem 0; */
-    /*top: 5%;*/
-    /*right: 37%;*/
     width: 50%;
     top: 0%;
     right: 0%;
@@ -69,6 +80,7 @@ button a {
     border: none;
     background: #f8e952;
     font-size: 0.5rem;
+    width:100%;
 }
 
 .begin {
@@ -277,7 +289,7 @@ button a {
 
 .level1__header, .level2__header, .level3__header {
     z-index: 1;
-    height: 10%;
+    height: 16%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,6 +484,7 @@ button a {
 .level3 {
     top: 0%;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -569,6 +582,7 @@ button a {
 
 /*---------------------------------------------activity-start-----------------------------------------------*/
 .activity, .awards {
+    width:100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -645,35 +659,50 @@ button a {
 }
 
 .coaches__photos, .books__covers {
-    width: 90%;
-    display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.coaches__photos img {
-    width: 17%;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .books__covers img {
+        width: 60px;
+    }
+
+    .human-display img {
+        width: 50px;
+    }
 }
 
-.img--show {
-    display: block;
+@media screen and (min-width: 480px) and (max-width: 720px) {
+    .books__covers img {
+        width: 90px;
+    }
+
+    .human-display img {
+        width: 75px;
+    }
 }
 
-.img--hide {
-    display: none;
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    .books__covers img {
+        width: 130px;
+    }
+
+    .human-display img {
+        width: 100px;
+    }
 }
 
-.books__covers img {
-    width: 22%;
-}
+@media screen and (min-width: 1080px) {
+    .books__covers img {
+        width: 200px;
+    }
 
-.book--show {
-    display: block;
-}
-
-.book--hide {
-    display: none;
+    .human-display img {
+        width: 171px;
+    }
 }
 
 .about-us__content {
@@ -747,4 +776,118 @@ button a {
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
+    position: relative;
 }
+
+.books__right-arrow, .coaches__right-arrow {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    right: -50px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-image: url('../img/right-arrow.png');
+    background-size: 30px 30px;
+}
+
+.books__left-arrow, .coaches__left-arrow {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    left: -40px;
+    background-size: 30px 30px;
+    background-position: 20px;
+    background-repeat: no-repeat;
+    background-image: url('../img/left-arrow.png');
+}
+
+.bounce-right {
+  -moz-animation: bounce-right 2s infinite;
+  -webkit-animation: bounce-right 2s infinite;
+  animation: bounce-right 2s infinite;
+}
+
+@keyframes bounce-right {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(30px);
+  }
+  60% {
+    transform: translateX(15px);
+  }
+}
+
+.bounce-left {
+  -moz-animation: bounce-left 2s infinite;
+  -webkit-animation: bounce-left 2s infinite;
+  animation: bounce-left 2s infinite;
+}
+
+@keyframes bounce-left {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
+}
+
+.human-display {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.human-display:hover .instruction {
+    display: block;
+}
+
+.instruction {
+    font-size: 0.45em;
+    color: white;
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    padding-left: 7%;
+    padding-right: 7%;
+    top: 0;
+    background-color: rgba(140, 16, 24, .6);
+    display: none;
+    vertical-align: middle;
+    overflow: auto;
+}
+
+/*-----------------------------------------------loading-start-----------------------------------------------*/
+#over {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c1c1c1;
+    opacity: 0.5;
+    z-index: 1000;
+}
+
+#layout {
+    display: block;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    z-index: 1001;
+    text-align: center;
+}
+
+#main {
+ opacity: 0;
+}
+/*-----------------------------------------------loading-end-----------------------------------------------*/
