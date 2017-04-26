@@ -2,8 +2,10 @@ html {
     font-size: 25px;
 }
 
-.level1-level2-level3__back-ground {
-    height: 2200%;
+body {
+    background-image:url(../img/background.png);
+    background-repeat: repeat-y;
+    background-attachment: scroll;
 }
 
 .banner {
@@ -50,7 +52,7 @@ html {
 }
 
 .thought-works-logo {
-    width: 40%;
+    width: 30%;
 }
 
 .activity {

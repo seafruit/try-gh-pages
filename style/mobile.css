@@ -2,6 +2,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-image: none;
+}
+
 .level1-level2-level3__back-ground {
     height: 2160%;
 }
@@ -32,10 +36,6 @@ html {
 .foot__entry-point {
     width: 100%;
     justify-content: space-between;
-}
-
-.thought-works-logo {
-    width: 70%;
 }
 
 .level2__body__floor-light {
